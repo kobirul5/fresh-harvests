@@ -19,14 +19,14 @@ type ProductCardProps = {
 
 
 export default function FreshProductCard({ product }: ProductCardProps) {
-    console.log(product, "---------")
+
     return (
         <div className="card bg-white  shadow-xl">
             <figure className="px-5 pt-5 ">
                 <div className=' h-[200px] w-[200px] flex justify-center bg-gray-20 rounded-xl'>
                     <Image
                         src={product?.images[0]}
-                        alt="Shoes"
+                        alt={product.productName}
                         height={200}
                         width={200}
                         className="rounded-xl " />
