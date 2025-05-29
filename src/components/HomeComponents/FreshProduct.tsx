@@ -33,7 +33,7 @@ export default function FreshProduct() {
     console.log(products)
 
     return (
-        <div className="mt-20 container mx-auto">
+        <div className="mt-20 container mx-auto px-5">
             <Heading
                 title="Our Fresh Products"
                 subtitle="Our Products"
@@ -61,7 +61,7 @@ export default function FreshProduct() {
                 </div>
             </div>
 
-            <div className="grid grid-cols-4 gap-5 mt-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
                 {products?.slice(0, 8).map((product, i) => <FreshProductCard key={i} product={product} />)}
             </div>
             <div className="flex justify-center items-center rounded-[8px] mt-10">
