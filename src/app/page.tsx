@@ -1,6 +1,7 @@
 import AboutUs from "@/components/HomeComponents/AboutUs";
 import Banner from "@/components/HomeComponents/Banner";
 import FreshProduct from "@/components/HomeComponents/FreshProduct";
+import Offer from "@/components/HomeComponents/Offer";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Banner/>
       <FreshProduct/>
       <AboutUs/>
+      <Offer/>
     </main>
   );
 }
