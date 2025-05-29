@@ -20,10 +20,12 @@ export default function RootLayout({
         className={`rubi antialiased bg-gray-50`}
       >
         <div className="fixed z-10 w-full ">
-          <Navbar/>
+          <Navbar />
         </div>
         {children}
-        <Footer/>
+        <div className="bg-[#F4F6F6]">
+          <Footer />
+        </div>
       </body>
     </html>
   );

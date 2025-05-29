@@ -1,6 +1,6 @@
-// import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import Logo from '../../../public/logo.png'
+import Image from 'next/image'
 
 export default function Navbar() {
 
@@ -25,7 +25,13 @@ export default function Navbar() {
               {middleLinks.map((link, idx) => <li key={idx}><Link className='questrial-regular' href={link.path}>{link.name}</Link></li>)}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">Fresh Harvests</a>
+          <a className="btn hover:bg-transparent bg-transparent border-0 shadow-none text-xl">
+             <Image
+        alt="log"
+        width={30}
+        height={30}
+        src={Logo}/>
+            Fresh Harvests</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="flex justify-center questrial-regular items-center gap-5 capitalize ">
