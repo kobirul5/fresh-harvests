@@ -18,6 +18,7 @@ export default function Banner() {
         subtitle='Welcome to Fresh Harvest'
         title=' Fresh Fruits and Vegetables'
         />
+        
         <p className="w-8/12">
           At Fresh Harvest, we are passionate about providing you with the freshest
           and most flavorful fruits and vegetables.
