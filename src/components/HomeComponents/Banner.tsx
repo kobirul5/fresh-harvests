@@ -18,7 +18,7 @@ export default function Banner() {
         subtitle='Welcome to Fresh Harvest'
         title=' Fresh Fruits and Vegetables'
         />
-        
+
         <p className="w-8/12">
           At Fresh Harvest, we are passionate about providing you with the freshest
           and most flavorful fruits and vegetables.
@@ -55,7 +55,7 @@ export default function Banner() {
             <FaGooglePlay className="text-2xl" />
             <div className='flex flex-col'>
               <span className='text-[10px]'>Get it on</span>
-              <span className='font-medium'>Google Play</span>
+              <span className='font-medium'>Google Play </span>
             </div>
           </a>
         </div>
