@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react'
 interface Products {
     id: string;
@@ -36,7 +37,7 @@ export default function FreshProductCard({ product }: ProductCardProps) {
                 <h2 className="card-title">{product?.productName}</h2>
                 <p>${product.price}</p>
                 <div className="card-actions w-full">
-                    <button className="btn w-full rounded-[8px] hover:bg-primary bg-[#D9D9D9]/10 border-gray-20 hover:text-white">Buy Now</button>
+                    <Link href={`product-detail/${product.id}`} className="btn w-full rounded-[8px] hover:bg-primary bg-[#D9D9D9]/10 border-gray-20 hover:text-white">Add To Cart</Link>
                 </div>
             </div>
         </div>

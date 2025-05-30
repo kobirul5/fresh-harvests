@@ -3,6 +3,7 @@ import { FaApple, FaArrowAltCircleRight, FaGooglePlay } from 'react-icons/fa';
 import Image from 'next/image';
 import MainHeading from '../shared/MainHeading';
 import BannerImage from '../../../public/banner-bg.jpg'
+import ImageB from '../../../public/photo01.png'
 
 
 export default function Banner() {
@@ -61,7 +62,7 @@ export default function Banner() {
 
       <div className="mt-10 md:mt-0 relative  ">
         <Image
-          src="https://i.ibb.co/WWtzDrnJ/banner-girl.png"
+          src={ImageB}
           alt="Girl with Fruits"
           width={770}
           height={500}
